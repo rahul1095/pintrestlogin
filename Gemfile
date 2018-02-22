@@ -62,3 +62,6 @@ gem "font-awesome-rails"
 gem  'omniauth-instagram'
 gem  'omniauth-twitter'
 gem 'thin'
+gem 'draper'
+gem 'geocoder'
+

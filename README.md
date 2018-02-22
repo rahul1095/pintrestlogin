@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+thin start --ssl  --ssl-key-file server.key --ssl-cert-file server.crt
