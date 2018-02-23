@@ -13,4 +13,13 @@ class PostDecorator < Draper::Decorator
   def tbody
   	@object.title.present? ? "Titlele  " +@object.title+" "+ @object.body : nil 
   	end 
+
+    def image
+     if model.image_url.present? 
+      h.image_tag self.image_url, height: 200, width: 300
+    else
+        h.image_tag "http://via.placeholder.com/350x150" , height: 200, width: 300
+      end
+      end
+      
 end

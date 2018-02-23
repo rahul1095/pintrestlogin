@@ -29,7 +29,6 @@ end
   # POST /locations
   # POST /locations.json
   def create
-    byebug
     @location = Location.new(location_params)
 
     respond_to do |format|

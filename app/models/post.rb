@@ -1,6 +1,8 @@
 class Post < ApplicationRecord
 	after_destroy :last_words
 	after_create :send_welcome_email
+	belongs_to :user
+	mount_uploader :image, AvatarUploader
 	def use
 		 puts self.body
 	end	
