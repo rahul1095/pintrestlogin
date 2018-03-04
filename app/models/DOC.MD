@@ -1,4 +1,4 @@
-1. what is difference between eac and map 
+1. what is difference between each and map 
 
 each simply iterates over the given enumerable, running the block for each value. It discards the return value of the block, and each simply returns the original object it was called on:
 
@@ -39,4 +39,7 @@ This means that using symbols can potentially save a good bit of memory dependin
 
 As far as when to use which, I usually use strings for almost everything except things like hash keys where I really want a unique identifier, not a string.
 
+3.how to Delete a branch from server
+
+ans: git push origin :developement(which branch you want to delete)
 
