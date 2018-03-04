@@ -1,6 +1,5 @@
 ActiveAdmin.register Post do
-	decorate_with PostDecorator
-
+ decorate_with PostDecorator
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -49,8 +48,8 @@ end
         row  :body do |ad|
          raw(ad.body)	
         end	
-        row :user_id
-      row :image
+        row :user_eamil
+       row :image
     end
 end
 

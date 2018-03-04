@@ -70,4 +70,14 @@ gem 'active_bootstrap_skin'
 gem 'activeadmin-select2', github: 'mfairburn/activeadmin-select2'
 gem 'select2-rails'
 gem 'carrierwave', '~> 1.0'
+gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
+
+gem "rspec-rails", :group => [:test, :development]
+group :test do
+
+  gem "factory_bot_rails"
+  gem "guard-rspec"
+end
+
+gem 'faker'
 
